@@ -4,10 +4,10 @@
 UNIXTIME=$(date +%s)
 
 # docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]
-docker tag snowsql:latest kurron/snowsql:latest
-docker tag snowsql:latest kurron/snowsql:${UNIXTIME}
+docker tag snowsql:latest promisepay/snowsql:latest
+docker tag snowsql:latest promisepay/snowsql:${UNIXTIME}
 docker images
 
 # Usage:  docker push [OPTIONS] NAME[:TAG]
-docker push kurron/snowsql:latest
-docker push kurron/snowsql:${UNIXTIME}
+docker push promisepay/snowsql:latest
+docker push promisepay/snowsql:${UNIXTIME}
